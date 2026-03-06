@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import matplotlib.pyplot as plt
 from graph_builder import build_graph
 
@@ -11,3 +12,18 @@ plt.title("Degree Distribution")
 plt.xlabel("Degree")
 plt.ylabel("Frequency")
 plt.show()
+=======
+import matplotlib.pyplot as plt
+from graph_builder import build_graph
+
+G = build_graph()
+
+degrees = [d for n, d in G.degree()]
+
+plt.figure(figsize=(7,5))
+plt.hist(degrees, bins=30, color="skyblue", edgecolor="black")
+plt.title("Degree Distribution")
+plt.xlabel("Degree")
+plt.ylabel("Frequency")
+plt.show()
+>>>>>>> a0441f862306ed2b8fde76c94a903acf56befa41
